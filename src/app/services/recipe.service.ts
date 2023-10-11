@@ -34,6 +34,8 @@ export class RecipeService {
   constructor(private slService: ShoppingListService) {}
 
   getRecipes() {
+    // Returns a copy of Recipe array.
+    // when push element to origin Recipe array, the copy of Recipe array will also be updated unlike spread operator
     return this.recipes.slice();
   }
 
