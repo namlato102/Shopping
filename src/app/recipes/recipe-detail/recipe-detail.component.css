@@ -1,9 +1,0 @@
-.dropdown-menu {
-
-  display: none;
-
-}
-
-.open > .dropdown-menu {
-  display: block;
-}
