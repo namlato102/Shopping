@@ -21,9 +21,6 @@ export class ShoppingEditComponent implements OnInit {
   @ViewChild('nameInput', { static: false }) nameInputRef!: ElementRef;
   @ViewChild('amountInput', { static: false }) amountInputRef!: ElementRef;
 
-  //property is declared and initialized then send data to parent component
-  @Output() ingredientAdded = new EventEmitter<Ingredient>();
-
   constructor(private slService: ShoppingListService) { }
 
   ngOnInit() {
