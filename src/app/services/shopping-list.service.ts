@@ -26,6 +26,8 @@ export class ShoppingListService {
   }
 
   addIngredient(ingredient: Ingredient) {
+    // Returns a copy of Recipe array.
+    // when push element to origin Recipe array, the copy of Recipe array will also be updated unlike spread operator
     this.ingredients.push(ingredient);
     this.ingredientsChanged.next(this.ingredients.slice());
   }
